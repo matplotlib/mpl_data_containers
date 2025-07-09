@@ -58,7 +58,7 @@ jobs:
       - name: Generate artifact attestation for sdist and wheel
         uses: actions/attest-build-provenance@7668571508540a607bdfd90a87a560489fe372eb  # v2.1.0
         with:
-          subject-path: dist/cycler-*
+          subject-path: dist/mpl_data_containers-*
 
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@67339c736fd9354cd4f8cb0b744f2b82a74b5c70  # v1.12.3
